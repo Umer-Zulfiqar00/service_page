@@ -1,0 +1,75 @@
+.container{
+  max-width: 1300px;
+  width:100%;
+  margin: auto;
+}
+section{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+h1{
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.overlay-image {
+  position: relative;
+  bottom: 5vw; /* Adjust the top and left values to position the overlay image where you want */
+  left: 10vw;
+  border-radius: 50%;
+  z-index: 1; /* Set a higher z-index for the overlay image to ensure it appears on top */
+  
+}
+.card{
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  width: 100%;
+  border-radius: 10px;
+  /* border: 2px solid  */
+}
+.card-body-text{
+  background-color: #337AB7;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 110px; /* Adjust the top and left values to position the overlay image where you want */
+  z-index: 1;
+  border-radius: 10px;
+  padding-bottom: 5vw;
+
+}
+.top-image{
+background-color: white!important;
+}
+.Card-text{
+  text-align: center;
+}
+.Card-desc{
+  text-align: center;
+  padding-bottom: 2vh;
+}
+.header{
+  color: #337AB7 ;
+  text-align: left;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
+}
+.navbar-header{
+  background-color: #337AB7;
+}
+.navbar-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
