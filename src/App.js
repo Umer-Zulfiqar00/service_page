@@ -6,11 +6,14 @@ import Home from "./components/Home";
 import NavigationBar from "./components/Navbar";
 import Service from './components/Services'
 import Trades from "./components/Trades";
-
+import Text from "./components/Text";
+import Footer from "./components/Footer";
+import Navbartext from "./components/Navbartext";
 
 const App=()=>{
   return(
     <>
+    <Navbartext/>
     <NavigationBar/>
       <Routes>
       <Route  path='/about'   element={<About />}></Route>
@@ -20,7 +23,8 @@ const App=()=>{
       </Routes>
       <Service/>
       <Trades/>
-      
+      <Text/>
+      <Footer/>
 
       </>
   )

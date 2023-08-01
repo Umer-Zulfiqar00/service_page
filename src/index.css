@@ -9,7 +9,15 @@ section{
   flex-direction: column;
   align-items: center;
 }
-
+.text{
+  text-align: center;
+  font-weight: 700;
+  color: #FF0000;
+  font-family: roboto;
+}
+.text:hover{
+  text-decoration: underline;
+}
 
 h1{
   font-size: 50px;
@@ -21,11 +29,12 @@ h1{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-top: 30px;
 }
 .overlay-image {
   position: relative;
-  bottom: 5vw; /* Adjust the top and left values to position the overlay image where you want */
-  left: 10vw;
+  bottom: 4vw; /* Adjust the top and left values to position the overlay image where you want */
+  left: 9vw;
   border-radius: 50%;
   z-index: 1; /* Set a higher z-index for the overlay image to ensure it appears on top */
   
@@ -34,8 +43,7 @@ h1{
   flex: 0 0 calc(33.33% - 20px);
   max-width: calc(33.33% - 20px);
   width: 100%;
-  border-radius: 10px;
-  /* border: 2px solid  */
+  margin-top: 30px;
 }
 .card-body-text{
   background-color: #337AB7;
@@ -45,25 +53,29 @@ h1{
   position: relative;
   bottom: 110px; /* Adjust the top and left values to position the overlay image where you want */
   z-index: 1;
-  border-radius: 10px;
   padding-bottom: 5vw;
 
 }
-.top-image{
-background-color: white!important;
-}
+
 .Card-text{
+  font-family: roboto;
   text-align: center;
 }
+
+.Card-text:hover{
+  text-decoration: underline;
+}
+
 .Card-desc{
   text-align: center;
-  padding-bottom: 2vh;
 }
 .header{
+  margin-left: 50px;
+font-family: roboto;
   color: #337AB7 ;
   text-align: left;
-  margin-bottom: 10vh;
-  margin-top: 5vh;
+  margin-bottom: 15vh;
+  margin-top: 3vh;
 }
 .navbar-header{
   background-color: #337AB7;
@@ -72,4 +84,21 @@ background-color: white!important;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; 
+}
+
+.red-button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 0px;
+  font-size: 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
